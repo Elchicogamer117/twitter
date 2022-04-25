@@ -1,0 +1,28 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "Tercer proyecto backend, semana 3.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elchicogamer117/twitter.git"
+  },
+  "keywords": [
+    "Models",
+    "Services",
+    "Views"
+  ],
+  "author": "elchicogamer117",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elchicogamer117/twitter/issues"
+  },
+  "homepage": "https://github.com/Elchicogamer117/twitter#readme",
+  "devDependencies": {
+    "jest": "^28.0.0"
+  }
+}
