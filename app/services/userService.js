@@ -10,6 +10,10 @@ class userService{
       static updateUserUsername(user, newUserName){
             user.setUserName = newUserName
       }
+      static getAllUsernames(users){
+            //return [users[0].username, users[1].username, users[2].username] <- funciona, pero no de manera general, la funcion 'map' nos simplifica el hacer una subfuncion for
+            return users.map((user) => user.username)
+      }
 
 }
 
