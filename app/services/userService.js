@@ -7,8 +7,10 @@ class userService{
       static getinfo(user){
             return [user.id, user.username, user.name, 'bio default']
       }
+      static updateUserUsername(user, newUserName){
+            user.setUserName = newUserName
+      }
 
 }
-
 
 module.exports = userService
