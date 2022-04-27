@@ -6,7 +6,7 @@
 //Requerimiento 3: Agregar un nuevo método estático en `UserService` llamado `updateUserUsername`, que reciba un objeto de la clase `User` y un nuevo string, que actualizará el valor de `username`. 
 //Requerimiento 4: Agregar un nuevo método estático en `UserService` llamado `getAllUsernames`, que recibirá una lista de objetos de la clase `User`, y regresará la lista de todos los usernames de dichos objetos. 
 
-const userService = require('./../../app/services/userService')
+const userService = require('../../app/services/userService')
 
 describe('Test for UserService', () =>{
       test('1) Create a new user using the userService', () => { 
