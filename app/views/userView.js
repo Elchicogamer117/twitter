@@ -8,12 +8,13 @@ class userView{
             // else{
             //       userService.create(payload) //*! <- funciona para la prueba pero no para un correcto funcionamiento, por eso es importante hacer fallar la prueba a proposito
             // }
-            else if(typeof payload.username === 'string' && typeof payload.name === 'string' && typeof payload.id === 'number'){ //* <- con esta sentencia se cumplen los requerimientos 2 y 3
-                  return userService.create(payload.id, payload.username, payload.name)
+            else if(typeof payload.username === 'string' && typeof payload.name === 'string' && typeof payload.id === 'number'){ //* <- con esta sentencia se cumplen los requerimientos 2 - 4
+                  return userService.create(payload.id, payload.username, payload.name) //* <- De esta forma no importa el orden en que venga la llave
             } else{
                   return {error: "Las propiedades del payload necesitan tener un valor válido"}
             }
       }
 }
+
 
 module.exports = userView
